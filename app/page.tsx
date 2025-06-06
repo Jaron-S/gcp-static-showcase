@@ -572,7 +572,7 @@ export default function HomePage() {
 						</div>
 
 						<div className="flex space-x-6">
-							<Link href={""}>
+							<Link href={"https://github.com/Jaron-S/gcp-static-showcase"}>
 								<Button
 									variant="ghost"
 									size="sm"
