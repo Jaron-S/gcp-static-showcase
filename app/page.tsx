@@ -103,14 +103,16 @@ export default function HomePage() {
 									<ArrowRight className="ml-2 h-5 w-5" />
 								</Button>
 							</Link>
-							<Button
-								size="lg"
-								variant="outline"
-								className="border-slate-600 text-slate-800 hover:bg-slate-800 hover:text-slate-200"
-							>
-								View Source Code
-								<Github className="ml-2 h-5 w-5" />
-							</Button>
+							<Link href={"https://github.com/Jaron-S/gcp-static-showcase"}>
+								<Button
+									size="lg"
+									variant="outline"
+									className="border-slate-600 text-slate-800 hover:bg-slate-800 hover:text-slate-200"
+								>
+									View on GitHub
+									<Github className="ml-2 h-5 w-5" />
+								</Button>
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -222,16 +224,6 @@ export default function HomePage() {
 							</CardHeader>
 							<CardContent>
 								<div className="flex items-center justify-center">
-									{/* <div className="text-center">
-										<Globe className="h-16 w-16 text-blue-400 mx-auto mb-4" />
-										<p className="text-slate-300 text-lg font-medium">
-											Architecture Diagram
-										</p>
-										<p className="text-slate-400 text-sm">
-											User → DNS → Load Balancer (SSL + Cloud Armor) → CDN →
-											Storage
-										</p>
-									</div> */}
 									<Image
 										src={"/architecture.svg"}
 										alt={"Architecture Diagram"}
